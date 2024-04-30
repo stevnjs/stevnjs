@@ -51,7 +51,7 @@ class ModelTrainer:
 
 # Contoh penggunaan
 if __name__ == "__main__":
-    trainer = ModelTrainer(data_path="/content/data_A.csv", target_column="churn", categorical_cols=['Geography', 'Gender'])
+    trainer = ModelTrainer(data_path="data_A.csv", target_column="churn", categorical_cols=['Geography', 'Gender'])
     trainer.load_data()
     trainer.preprocess_data()
     trainer.train_models()
